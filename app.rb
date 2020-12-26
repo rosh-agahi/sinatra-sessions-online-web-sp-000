@@ -36,7 +36,8 @@ class App < Sinatra::Base
   end
 
   get '/set_session' do
-    #set session id here
+    #set session id here 
+    session[:foo] = 'hello'
 
     if session[:id] == 1
       # "Session ID set. It's currently set to #{session[:id]}."
